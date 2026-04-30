@@ -8,3 +8,55 @@
 - Environments: .env.local
 ✓ Ready in 1062ms
 
+ HEAD /sign-in 200 in 3.4s (next.js: 1986ms, proxy.ts: 722ms, application-code: 674ms)
+ HEAD /sign-up 200 in 3.5s (next.js: 2.5s, proxy.ts: 727ms, application-code: 255ms)
+✓ Compiled in 70.7s
+ GET /sign-in 200 in 1685ms (next.js: 304ms, proxy.ts: 18ms, application-code: 1363ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777485934991 200 in 464ms (next.js: 45ms, proxy.ts: 34ms, application-code: 384ms)
+ GET /sign-in 200 in 205ms (next.js: 29ms, proxy.ts: 18ms, application-code: 158ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777485950318 200 in 187ms (next.js: 24ms, proxy.ts: 13ms, application-code: 150ms)
+ GET /sign-in 200 in 15.1s (next.js: 683ms, proxy.ts: 4.6s, application-code: 9.8s)
+ GET /sign-in 200 in 18.3s (next.js: 841ms, proxy.ts: 4.0s, application-code: 13.4s)
+ GET /sign-in/SignIn_clerk_catchall_check_1777486010750 200 in 956ms (next.js: 131ms, proxy.ts: 29ms, application-code: 797ms)
+ GET /sign-in 200 in 1846ms (next.js: 344ms, proxy.ts: 644ms, application-code: 858ms)
+ GET /sign-in 200 in 343ms (next.js: 28ms, proxy.ts: 60ms, application-code: 254ms)
+ GET /sign-in 200 in 162ms (next.js: 24ms, proxy.ts: 22ms, application-code: 117ms)
+ GET /sign-in 200 in 1540ms (next.js: 1205ms, proxy.ts: 259ms, application-code: 76ms)
+ GET /sign-in 200 in 2.9s (next.js: 858ms, proxy.ts: 952ms, application-code: 1124ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777486113484 200 in 454ms (next.js: 41ms, proxy.ts: 35ms, application-code: 379ms)
+ GET /logo.svg 404 in 999ms (next.js: 111ms, application-code: 888ms)
+ GET /sign-in 200 in 1971ms (next.js: 386ms, proxy.ts: 846ms, application-code: 739ms)
+ GET /sign-in 200 in 17.8s (next.js: 3.9s, proxy.ts: 2.7s, application-code: 11.2s)
+ GET /sign-in 200 in 62s (next.js: 6.6s, proxy.ts: 2.8s, application-code: 53s)
+ GET /sign-in 200 in 59s (next.js: 47s, proxy.ts: 2.8s, application-code: 9.2s)
+ GET /sign-in 200 in 59s (next.js: 46s, proxy.ts: 2.8s, application-code: 9.4s)
+ GET /sign-in 200 in 59s (next.js: 47s, proxy.ts: 2.8s, application-code: 9.1s)
+ GET /sign-in 200 in 58s (next.js: 46s, proxy.ts: 3.3s, application-code: 9.2s)
+ GET /sign-in 200 in 9.4s (next.js: 4.2s, proxy.ts: 3.7s, application-code: 1453ms)
+ GET /sign-in 200 in 26.3s (next.js: 4.4s, proxy.ts: 3.7s, application-code: 18.2s)
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+- Environments: .env.local
+✓ Ready in 849ms
+
+ GET /sign-in 200 in 6.5s (next.js: 1657ms, proxy.ts: 434ms, application-code: 4.5s)
+ GET /sign-in 200 in 6.6s (next.js: 1680ms, proxy.ts: 417ms, application-code: 4.5s)
+ GET /sign-in 200 in 1196ms (next.js: 40ms, proxy.ts: 22ms, application-code: 1135ms)
+ GET /logo.svg 404 in 487ms (next.js: 120ms, application-code: 367ms)
+ GET /sign-in 200 in 1197ms (next.js: 164ms, proxy.ts: 370ms, application-code: 663ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777486473338 200 in 532ms (next.js: 82ms, proxy.ts: 42ms, application-code: 408ms)
+ GET / 200 in 291ms (next.js: 57ms, proxy.ts: 25ms, application-code: 209ms)
+ GET /logo.svg 404 in 154ms (next.js: 16ms, application-code: 138ms)
+ GET / 200 in 53ms (next.js: 10ms, proxy.ts: 25ms, application-code: 18ms)
+ GET / 200 in 70ms (next.js: 7ms, proxy.ts: 16ms, application-code: 48ms)
+ GET / 200 in 1356ms (next.js: 92ms, proxy.ts: 438ms, application-code: 826ms)
+ GET / 200 in 6.3s (next.js: 1472ms, proxy.ts: 3.4s, application-code: 1489ms)
+ GET / 200 in 87ms (next.js: 7ms, proxy.ts: 21ms, application-code: 59ms)
+ GET / 200 in 36.1s (next.js: 3.4s, proxy.ts: 27.5s, application-code: 5.2s)
+ GET / 200 in 45s (next.js: 4.7s, proxy.ts: 32.6s, application-code: 7.5s)
+ GET / 200 in 45s (next.js: 4.6s, proxy.ts: 32.5s, application-code: 7.6s)
+ GET / 200 in 105s (next.js: 4.7s, proxy.ts: 90s, application-code: 10.2s)
+ GET / 200 in 45s (next.js: 4.6s, proxy.ts: 32.6s, application-code: 7.6s)
+ GET / 200 in 2.1min (next.js: 3.3s, proxy.ts: 97s, application-code: 22.8s)
+[?25h

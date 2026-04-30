@@ -1,0 +1,34 @@
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+⚠ Server is approaching the used memory threshold, restarting...
+[browser] Failed to fetch RSC payload for http://localhost:3000/sign-in. Falling back to browser navigation. TypeError: Failed to fetch
+[browser] Failed to fetch RSC payload for http://localhost:3000/sign-in. Falling back to browser navigation. TypeError: Failed to fetch
+[browser] Failed to fetch RSC payload for http://localhost:3000/sign-in. Falling back to browser navigation. TypeError: network error
+TypeError: network error
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+[browser] Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://first-donkey-74.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+
+<--- Last few GCs --->
+
+[38808:00000203C52D2000]  1175501 ms: Scavenge 3887.4 (3918.2) -> 3883.4 (3936.2) MB, pooled: 0 MB, 14.07 / 0.00 ms  (average mu = 0.354, current mu = 0.319) allocation failure; 
+[38808:00000203C52D2000]  1178848 ms: Mark-Compact (reduce) 3895.7 (3941.2) -> 3872.7 (3903.9) MB, pooled: 0 MB, 2482.17 / 42.76 ms  (+ 626.2 ms in 125 steps since start of marking, biggest step 5.2 ms, walltime since start of marking 3347 ms) (average mu
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF697AAC36F node::OnFatalError+1343
+ 2: 00007FF6986F4D77 v8::Function::NewInstance+423
+ 3: 00007FF6984F5467 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 4: 00007FF6984F9174 v8::base::AddressSpaceReservation::AddressSpaceReservation+337700
+ 5: 00007FF69850810C v8::internal::StrongRootAllocatorBase::deallocate_impl+16604
+ 6: 00007FF69850794B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+ 7: 00007FF69998DAED v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791421
+ 8: 00007FF6984F2F30 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+ 9: 00007FF698576C09 v8::Unlocker::~Unlocker+9273
+10: 00007FF6980ECA18 v8::String::Utf8Value::~Utf8Value+142680
+11: 00000203FD1F733A 

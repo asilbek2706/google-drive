@@ -1,9 +1,9 @@
-import React from "react";
-import { UserButton } from "@clerk/nextjs";
+import React from 'react';
+import { UserButton } from '@clerk/nextjs';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="flex items-center justify-center">
       <UserButton />
     </div>
   );
