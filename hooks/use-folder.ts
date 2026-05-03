@@ -1,15 +1,13 @@
 import { create } from 'zustand';
 
-type FolderStore = {
-  isOpen: boolean;
-  onOpen: () => void;
-  onClose: () => void;
-};
+interface FolderStore {
+  folderId: string;
+  folderName: string;
+  setFolder: (folderId: string, folderName: string) => void;
+}
 
-export const useFolder = create<FolderStore>((set) => {
-  return {
-    isOpen: false,
-    onOpen: () => set({ isOpen: true }),
-    onClose: () => set({ isOpen: false }),
-  };
-});
+export const useFolder = create<FolderStore>((set) => ({
+  folderId: 'root',
+  folderName: 'My Drive',
+  setFolder: (folderId, folderName) => set({ folderId, folderName }),
+}));
