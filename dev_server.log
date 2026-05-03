@@ -1,0 +1,188 @@
+
+> google-drive@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 516ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+○ Compiling / ...
+⨯ ./components/shared/popover-actions.tsx:6:23
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  [90m4 |[0m [36mimport[0m { [33mSeparator[0m } [36mfrom[0m [32m'../ui/separator'[0m;
+  [90m5 |[0m [36mimport[0m { useModal } [36mfrom[0m [32m'@/hooks/use-modal'[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { [33mChangeEvent[0m, useRef } [36mfrom[0m [32m'react'[0m;
+  [90m  |[0m                       [31m[1m^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { useUser } [36mfrom[0m [32m'@clerk/nextjs'[0m;
+  [90m8 |[0m [36mimport[0m { useFolder } [36mfrom[0m [32m'@/hooks/use-folder'[0m;
+  [90m9 |[0m [36mimport[0m { getDownloadURL, ref, uploadBytesResumable } [36mfrom[0m [32m'firebase/storage'[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./components/shared/popover-actions.tsx
+    ./components/shared/sidebar.tsx
+    ./app/(root)/(home)/layout.tsx
+
+
+ GET / 500 in 13.0s (next.js: 12.1s, proxy.ts: 585ms, application-code: 289ms)
+[browser] Uncaught Error: ./components/shared/popover-actions.tsx:6:23
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  4 | import { Separator } from '../ui/separator';
+  5 | import { useModal } from '@/hooks/use-modal';
+> 6 | import { ChangeEvent, useRef } from 'react';
+    |                       ^^^^^^
+  7 | import { useUser } from '@clerk/nextjs';
+  8 | import { useFolder } from '@/hooks/use-folder';
+  9 | import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./components/shared/popover-actions.tsx
+    ./components/shared/sidebar.tsx
+    ./app/(root)/(home)/layout.tsx
+
+
+    at <unknown> (Error: ./components/shared/popover-actions.tsx:6:23)
+    at <unknown> (Error: (./components/shared/popover-actions.tsx:6:23)
+[browser] ./components/shared/popover-actions.tsx:6:23
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  4 | import { Separator } from '../ui/separator';
+  5 | import { useModal } from '@/hooks/use-modal';
+> 6 | import { ChangeEvent, useRef } from 'react';
+    |                       ^^^^^^
+  7 | import { useUser } from '@clerk/nextjs';
+  8 | import { useFolder } from '@/hooks/use-folder';
+  9 | import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./components/shared/popover-actions.tsx
+    ./components/shared/sidebar.tsx
+    ./app/(root)/(home)/layout.tsx
+[browser] ./components/shared/popover-actions.tsx:6:23
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  4 | import { Separator } from '../ui/separator';
+  5 | import { useModal } from '@/hooks/use-modal';
+> 6 | import { ChangeEvent, useRef } from 'react';
+    |                       ^^^^^^
+  7 | import { useUser } from '@clerk/nextjs';
+  8 | import { useFolder } from '@/hooks/use-folder';
+  9 | import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./components/shared/popover-actions.tsx
+    ./components/shared/sidebar.tsx
+    ./app/(root)/(home)/layout.tsx
+[browser] ./components/shared/popover-actions.tsx:6:23
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  4 | import { Separator } from '../ui/separator';
+  5 | import { useModal } from '@/hooks/use-modal';
+> 6 | import { ChangeEvent, useRef } from 'react';
+    |                       ^^^^^^
+  7 | import { useUser } from '@clerk/nextjs';
+  8 | import { useFolder } from '@/hooks/use-folder';
+  9 | import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./components/shared/popover-actions.tsx
+    ./components/shared/sidebar.tsx
+    ./app/(root)/(home)/layout.tsx
+✓ Compiled in 517ms
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t&return_url=http%3A%2F%2Flocalhost%3A3000%2F
+
+ GET / 200 in 1790ms (next.js: 167ms, proxy.ts: 161ms, application-code: 1462ms)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+      <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+        <LoadingBoundary name="(root)/" loading={null}>
+          <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} unauthorized={undefined} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+                    <SegmentViewNode type="layout" pagePath="(root)/(ho...">
+                      <SegmentTrieNode>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <AuthLayout>
+                        <div className="relative">
+                          <Navbar>
+                          <Sidebar>
+                            <div className="h-[90vh] w...">
+                              <div className="flex flex-...">
+                                <Popover>
++                               <div className="flex flex-col space-y-6 mt-8">
+-                               <button
+-                                 className="inline-flex items-center justify-center whitespace-nowrap ring-offset-bac..."
+-                                 type="button"
+-                                 aria-haspopup="dialog"
+-                                 aria-expanded="false"
+-                                 aria-controls="radix-_R_6knebnblb_"
+-                                 data-state="closed"
+-                                 data-slot="popover-trigger"
+-                               >
+                          ...
+                  ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at Sidebar (components/shared/sidebar.tsx:28:9)
+    at AuthLayout (app/(root)/(home)/layout.tsx:9:7)
+  26 |         </Popover>
+  27 |
+> 28 |         <div className="flex flex-col space-y-6 mt-8">
+     |         ^
+  29 |           {sidebarLinks.map((link) => (
+  30 |             <Link href={link.path} key={link.path}>
+  31 |               <Item icon={link.icon} label={link.label} />
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://holy-tarpon-41.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+ GET /sign-in 200 in 2.7s (next.js: 2.5s, proxy.ts: 29ms, application-code: 118ms)
+ POST / 303 in 3.0s (next.js: 84ms, proxy.ts: 19ms, application-code: 2.9s)
+  └─ ƒ syncKeylessConfigAction({"apiKeysUrl":"https://dashboard.clerk.com/apps/app_3DDHmP4UBzNcba8fwFKiN8b1Ijp/instances/ins_3DDHmPId3W58RXnReQMQmnLLUTN/api-keys","claimUrl":"https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t","...":"3 items not stringified"}) in 19ms node_modules/@clerk/nextjs/dist/esm-router/keyless-actions.js
+ POST /sign-in 200 in 124ms (next.js: 55ms, proxy.ts: 27ms, application-code: 41ms)
+  └─ ƒ syncKeylessConfigAction({"apiKeysUrl":"https://dashboard.clerk.com/apps/app_3DDHmP4UBzNcba8fwFKiN8b1Ijp/instances/ins_3DDHmPId3W58RXnReQMQmnLLUTN/api-keys","claimUrl":"https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t","...":"3 items not stringified"}) in 5ms node_modules/@clerk/nextjs/dist/esm-router/keyless-actions.js
+ GET /sign-in 200 in 109ms (next.js: 72ms, proxy.ts: 17ms, application-code: 20ms)
+ GET /sign-in 200 in 43ms (next.js: 9ms, proxy.ts: 9ms, application-code: 25ms)

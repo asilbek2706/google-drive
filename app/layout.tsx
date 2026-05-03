@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/providers/theme-provider';
+import ModalProvider from '@/components/providers/modal-provider';
 import './globals.css';
 import { ChildProps } from '@/types';
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: ChildProps) {
             disableTransitionOnChange
             storageKey="google-drive"
           >
+            <ModalProvider />
             {children}
           </ThemeProvider>
         </body>
