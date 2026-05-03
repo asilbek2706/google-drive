@@ -10,34 +10,29 @@ import {
 } from '../ui/dialog';
 import { useState } from 'react';
 import { Button } from '../ui/button';
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { doc, updateDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { useUser } from '@clerk/nextjs';
-import { useFolder } from '@/hooks/use-folder';
 
-const FolderModal = () => {
-  const { isOpen, onClose, type } = useModal();
-  const { folderId } = useFolder();
-  const { user } = useUser();
-  const [value, setValue] = useState('');
+const RenameModal = () => {
+  const { isOpen, onClose, type, data } = useModal();
+  const [value, setValue] = useState(data?.name || '');
   const [loading, setLoading] = useState(false);
 
-  const isModalOpen = isOpen && type === 'create-folder';
+  const isModalOpen = isOpen && type === 'rename';
+
+  if (isModalOpen && value === '' && data?.name && !loading) {
+    setValue(data.name);
+  }
 
   const onSubmit = async () => {
-    if (!value || !user) return;
+    if (!value || !data?.id || !data?.type) return;
 
     setLoading(true);
     try {
-      await addDoc(collection(db, 'folders'), {
+      const collectionName = data.type === 'folder' ? 'folders' : 'files';
+      await updateDoc(doc(db, collectionName, data.id), {
         name: value,
-        uid: user.id,
-        timestamp: serverTimestamp(),
-        isStar: false,
-        isTrash: false,
-        parentFolder: folderId,
       });
-      setValue('');
       onClose();
     } catch (error) {
       console.log(error);
@@ -50,12 +45,12 @@ const FolderModal = () => {
     <Dialog open={isModalOpen} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>New folder</DialogTitle>
+          <DialogTitle>Rename</DialogTitle>
         </DialogHeader>
         <div className="py-4">
           <input
             className="w-full h-10 border rounded-md px-3 outline-none focus:border-blue-500"
-            placeholder="Folder name"
+            placeholder="Name"
             value={value}
             onChange={(e) => setValue(e.target.value)}
             disabled={loading}
@@ -71,7 +66,7 @@ const FolderModal = () => {
             onClick={onSubmit}
             disabled={loading || !value}
           >
-            Create
+            OK
           </Button>
         </DialogFooter>
       </DialogContent>
@@ -79,4 +74,4 @@ const FolderModal = () => {
   );
 };
 
-export default FolderModal;
+export default RenameModal;
