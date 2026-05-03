@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
-import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import ModalProvider from '@/components/providers/modal-provider';
 import './globals.css';
 import { ChildProps } from '@/types';
+import { Metadata } from 'next';
+import { ClerkProvider } from '@clerk/nextjs';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Google Drive',
   description: 'Google Drive clone built with Next.js',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 export default function RootLayout({ children }: ChildProps) {

@@ -186,3 +186,26 @@ https://react.dev/link/hydration-mismatch
   └─ ƒ syncKeylessConfigAction({"apiKeysUrl":"https://dashboard.clerk.com/apps/app_3DDHmP4UBzNcba8fwFKiN8b1Ijp/instances/ins_3DDHmPId3W58RXnReQMQmnLLUTN/api-keys","claimUrl":"https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t","...":"3 items not stringified"}) in 5ms node_modules/@clerk/nextjs/dist/esm-router/keyless-actions.js
  GET /sign-in 200 in 109ms (next.js: 72ms, proxy.ts: 17ms, application-code: 20ms)
  GET /sign-in 200 in 43ms (next.js: 9ms, proxy.ts: 9ms, application-code: 25ms)
+✓ Compiled in 6.9s
+✓ Compiled in 2.3s
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t&return_url=http%3A%2F%2Flocalhost%3A3000%2F
+
+ GET / 200 in 3.5s (next.js: 730ms, proxy.ts: 1726ms, application-code: 1004ms)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://holy-tarpon-41.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+ GET /sign-in 200 in 471ms (next.js: 305ms, proxy.ts: 20ms, application-code: 147ms)
+ POST / 303 in 594ms (next.js: 5ms, proxy.ts: 11ms, application-code: 578ms)
+  └─ ƒ syncKeylessConfigAction({"apiKeysUrl":"https://dashboard.clerk.com/apps/app_3DDHmP4UBzNcba8fwFKiN8b1Ijp/instances/ins_3DDHmPId3W58RXnReQMQmnLLUTN/api-keys","claimUrl":"https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t","...":"3 items not stringified"}) in 8ms node_modules/@clerk/nextjs/dist/esm-router/keyless-actions.js
+ GET /sign-in 200 in 149ms (next.js: 64ms, proxy.ts: 61ms, application-code: 24ms)
+ GET /sign-in 200 in 117ms (next.js: 37ms, proxy.ts: 27ms, application-code: 54ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777811444817 200 in 207ms (next.js: 9ms, proxy.ts: 14ms, application-code: 184ms)
+ GET / 200 in 272ms (next.js: 45ms, proxy.ts: 15ms, application-code: 213ms)
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://holy-tarpon-41.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:3216)
+ GET /sign-in 200 in 212ms (next.js: 56ms, proxy.ts: 17ms, application-code: 139ms)
+ POST / 303 in 360ms (next.js: 16ms, proxy.ts: 8ms, application-code: 337ms)
+  └─ ƒ syncKeylessConfigAction({"apiKeysUrl":"https://dashboard.clerk.com/apps/app_3DDHmP4UBzNcba8fwFKiN8b1Ijp/instances/ins_3DDHmPId3W58RXnReQMQmnLLUTN/api-keys","claimUrl":"https://dashboard.clerk.com/apps/claim?framework=nextjs&token=boympfulta86fmtdybfd6tjvmhg0apmqq2fr9m4t","...":"3 items not stringified"}) in 6ms node_modules/@clerk/nextjs/dist/esm-router/keyless-actions.js
+ GET /sign-in 200 in 98ms (next.js: 25ms, proxy.ts: 22ms, application-code: 51ms)
+ GET /sign-in 200 in 99ms (next.js: 21ms, proxy.ts: 18ms, application-code: 60ms)
+ GET /sign-in/SignIn_clerk_catchall_check_1777811512840 200 in 222ms (next.js: 18ms, proxy.ts: 36ms, application-code: 168ms)
