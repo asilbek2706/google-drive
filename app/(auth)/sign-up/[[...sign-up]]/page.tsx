@@ -2,7 +2,7 @@
 
 import { SignUp } from '@clerk/nextjs';
 import { dark, shadesOfPurple } from '@clerk/themes';
-import { useTheme } from 'next-themes';
+import { useTheme } from '@/components/providers/theme-provider';
 
 export default function Page() {
   const { resolvedTheme } = useTheme();
